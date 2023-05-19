@@ -1,3 +1,14 @@
+import Header from './components/Header/Header'
+
 export default function Home() {
-  return <main>hello world</main>
+  return (
+    <main>
+      <Header />
+
+      {/* <Sidebar />
+    <Board />
+
+    <Modal /> */}
+    </main>
+  )
 }
