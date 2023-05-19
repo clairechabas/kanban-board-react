@@ -1,3 +1,5 @@
+import ThemeProvider from './theme/ThemeProvider'
+
 export const metadata = {
   title: 'Kanban Board React',
   description: 'Learn React by building a Kanban Board',
@@ -10,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   )
 }
