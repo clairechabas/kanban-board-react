@@ -14,4 +14,4 @@ export default function ThemeProvider({
       <ChakraProvider theme={theme}>{children}</ChakraProvider>
     </CacheProvider>
   )
-}git commit -m 'feat(theme): move theme at project root and update theme'
+}
