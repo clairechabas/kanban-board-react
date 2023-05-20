@@ -1,12 +1,11 @@
 import { extendTheme } from '@chakra-ui/react'
-import '@fontsource/barlow/300.css'
-import '@fontsource/barlow/400.css'
-import '@fontsource/barlow/500.css'
-import '@fontsource/barlow/700.css'
+import '@fontsource/plus-jakarta-sans'
+import Switch from './switch'
 
 const theme = extendTheme({
   colors: {
     purple: {
+      50: '#EFEFF9',
       100: '#A8A4FF',
       200: '#635FC7',
     },
@@ -26,7 +25,20 @@ const theme = extendTheme({
     white: '#FFFFFF',
   },
   fonts: {
-    body: 'Barlow, sans-serif',
+    body: '"Plus Jakarta Sans", sans-serif',
+  },
+  styles: {
+    global: () => ({
+      body: {
+        bg: 'gray.100',
+      },
+      ul: {
+        listStyle: 'none',
+      },
+    }),
+  },
+  components: {
+    Switch,
   },
 })
 
