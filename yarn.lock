@@ -1466,10 +1466,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/barlow@npm:^4.5.9":
-  version: 4.5.9
-  resolution: "@fontsource/barlow@npm:4.5.9"
-  checksum: e53d1db32cd99d19b287a38842c8dccdd652119bba1ff905f485e739af2132304d84432d9cdb3ca59b7ef95a7332c69a11e61b292227286d6a4eff34170f4b28
+"@fontsource/plus-jakarta-sans@npm:^4.5.11":
+  version: 4.5.11
+  resolution: "@fontsource/plus-jakarta-sans@npm:4.5.11"
+  checksum: 52b35bf8fce75807f6636da77e9156f246426416974f1053b415cd26e7f39167cedacbd063237c0ff026dbe70b9f03f2b8a15ce3ea71180f2b0aa9d4ffbe42cc
   languageName: node
   linkType: hard
 
@@ -3583,7 +3583,7 @@ __metadata:
     "@chakra-ui/react": ^2.6.1
     "@emotion/react": ^11.11.0
     "@emotion/styled": ^11.11.0
-    "@fontsource/barlow": ^4.5.9
+    "@fontsource/plus-jakarta-sans": ^4.5.11
     "@types/node": 20.2.1
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4
