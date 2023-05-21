@@ -1,11 +1,13 @@
 import { extendTheme } from '@chakra-ui/react'
 import '@fontsource/plus-jakarta-sans'
+import Button from './button'
 import Switch from './switch'
 
 const theme = extendTheme({
   colors: {
     purple: {
-      50: '#EFEFF9',
+      25: '#EFEFF9',
+      50: '#d8d7f1',
       100: '#A8A4FF',
       200: '#635FC7',
     },
@@ -39,6 +41,7 @@ const theme = extendTheme({
   },
   components: {
     Switch,
+    Button,
   },
 })
 

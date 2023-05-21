@@ -14,18 +14,42 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const isSidebarOpen = false
+
   return (
     <html lang="en">
-      <body>
+      <body
+        style={{
+          minHeight: '100vh',
+        }}
+      >
         <ThemeProvider>
-          <Header />
+          <div
+            style={{
+              minHeight: '100vh',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <Header />
 
-          <main>
-            <Sidebar boardNames={boardNames} />
-            {children}
-          </main>
+            <main
+              style={{
+                height: '100%',
+                flexGrow: '1',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginLeft: isSidebarOpen ? '300px' : '0px',
+              }}
+            >
+              <Sidebar boardNames={boardNames} />
+              {children}
+            </main>
 
-          {/* <Modal /> */}
+            {/* <Modal /> */}
+          </div>
         </ThemeProvider>
       </body>
     </html>
