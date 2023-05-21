@@ -2,6 +2,7 @@
 
 import { Box, Button, Flex, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
+import IconDots from '../Icons/IconDots'
 
 const Header: React.FC = () => {
   const activeBoard = ''
@@ -10,8 +11,8 @@ const Header: React.FC = () => {
   return (
     <Flex
       align="center"
-      height="100%"
-      borderBottom={isSidebarOpen ? '0' : '1px'}
+      height="100px"
+      borderBottom="1px"
       borderColor="gray.200"
       bg="white"
     >
@@ -36,8 +37,19 @@ const Header: React.FC = () => {
         )}
 
         <Box ml="auto">
-          <Button ml="6">+ Add New Task</Button>
-          <Button ml="6">Settings</Button>
+          <Button variant="primary" size="lg" ml="6" disabled>
+            + Add New Task
+          </Button>
+          <Button
+            role="group"
+            variant="ghost"
+            ml="16px"
+            p="0"
+            color="gray.300"
+            _hover={{ bg: 'none', cursor: 'pointer' }}
+          >
+            <IconDots />
+          </Button>
         </Box>
       </Flex>
     </Flex>
